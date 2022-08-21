@@ -1,4 +1,4 @@
-# Update-inventory-WooCommerce
+# Plugins-Service-WooCommerce
 Actualiza el inventario de una tienda WooCommerce desde una API externa
 
 ## Instalación

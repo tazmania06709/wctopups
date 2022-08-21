@@ -43,8 +43,8 @@
             ],
             "authors": [
                 {
-                    "name": "Claudio Sanches",
-                    "email": "claudio.sanches@automattic.com"
+                    "name": "Josman Vicens Noa",
+                    "email": "josman.vicens@gmail.com"
                 }
             ],
             "description": "A PHP wrapper for the WooCommerce REST API",
