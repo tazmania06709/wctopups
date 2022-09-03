@@ -4,29 +4,30 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4dc4f7eafc320f652a2f6d2ccd359941",
+    "content-hash": "48db4ab44bc254d5081cf97f1c2dc128",
     "packages": [
         {
             "name": "automattic/woocommerce",
-            "version": "3.0.0",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/woocommerce/wc-api-php.git",
-                "reference": "a71aa95cc3de3f1d68c6303525d03c0557a96137"
+                "reference": "d3b292f04c0b3b21dced691ebad8be073a83b4ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/woocommerce/wc-api-php/zipball/a71aa95cc3de3f1d68c6303525d03c0557a96137",
-                "reference": "a71aa95cc3de3f1d68c6303525d03c0557a96137",
+                "url": "https://api.github.com/repos/woocommerce/wc-api-php/zipball/d3b292f04c0b3b21dced691ebad8be073a83b4ad",
+                "reference": "d3b292f04c0b3b21dced691ebad8be073a83b4ad",
                 "shasum": ""
             },
             "require": {
                 "ext-curl": "*",
                 "ext-json": "*",
-                "php": ">= 5.4.0"
+                "php": ">= 7.1.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "*",
+                "overtrue/phplint": "7.4.x-dev",
+                "phpunit/phpunit": "^8",
                 "squizlabs/php_codesniffer": "3.*"
             },
             "type": "library",
@@ -43,8 +44,8 @@
             ],
             "authors": [
                 {
-                    "name": "Josman Vicens Noa",
-                    "email": "josman.vicens@gmail.com"
+                    "name": "Claudio Sanches",
+                    "email": "claudio.sanches@automattic.com"
                 }
             ],
             "description": "A PHP wrapper for the WooCommerce REST API",
@@ -52,7 +53,11 @@
                 "api",
                 "woocommerce"
             ],
-            "time": "2019-01-16T20:28:40+00:00"
+            "support": {
+                "issues": "https://github.com/woocommerce/wc-api-php/issues",
+                "source": "https://github.com/woocommerce/wc-api-php/tree/3.1.0"
+            },
+            "time": "2022-03-18T21:46:17+00:00"
         }
     ],
     "packages-dev": [],
@@ -62,5 +67,6 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
 }

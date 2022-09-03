@@ -4,9 +4,9 @@ use Automattic\WooCommerce\Client;
 
 // Conexión WooCommerce API destino
 // ================================
-$url_API_woo = 'https://tuempresa.site/';
-$ck_API_woo = 'ck_5fde0679616fe2363980edf8a2061e815682e2ff';
-$cs_API_woo = 'cs_992d905e88b2a119fc8e786d181e309d0685a4c0';
+$url_API_woo = 'https://localhost/wordpress/';
+$ck_API_woo = 'ck_25408338bd88e4d060f34b0cb52b8c30f9225e20';
+$cs_API_woo = 'cs_6fd8d300dd3abc67427f977b53b112c3eeca2b03';
 
 $woocommerce = new Client(
     $url_API_woo,
