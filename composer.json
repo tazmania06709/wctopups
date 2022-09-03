@@ -1,5 +1,18 @@
 {
-    "require": {
-        "automattic/woocommerce": "^3.1"
-    }
+    "name": "josman.vicens/wctopups",
+    "description": "API Recargas Internacionales",
+    "license": "MTI",
+    "autoload": {
+        "psr-4": {
+            "JosmanVicens\\Wctopups\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "JOSMAN VICENS NOA",
+            "email": "josman.vicens@gmail.com"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {}
 }
