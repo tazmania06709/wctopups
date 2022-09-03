@@ -12,7 +12,10 @@ $woocommerce = new Client(
     $url_API_woo,
     $ck_API_woo,
     $cs_API_woo,
-    ['version' => 'wc/v3']
+    [
+        'wp_api' => true,
+        'version' => 'wc/v3'
+    ]
 );
 // ================================
 
