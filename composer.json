@@ -15,6 +15,7 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "guzzlehttp/guzzle": "^7.5"
+        "guzzlehttp/guzzle": "^7.5",
+        "automattic/woocommerce": "^3.1"
     }
 }
