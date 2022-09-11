@@ -4,7 +4,7 @@ use Automattic\WooCommerce\Client;
 
 // Conexión WooCommerce API destino
 // ================================
-$url_API_woo = 'https://localhost/wordpress/';
+$url_API_woo = 'https://localhost/wordpress/tienda/';
 $ck_API_woo = 'ck_25408338bd88e4d060f34b0cb52b8c30f9225e20';
 $cs_API_woo = 'cs_6fd8d300dd3abc67427f977b53b112c3eeca2b03';
 
@@ -22,7 +22,7 @@ $woocommerce = new Client(
 
 // Conexión API origen
 // ===================
-$url_API="http://localhost:3000/inventory/";
+/*$url_API="http://localhost:3000/inventory/";
 
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -80,8 +80,91 @@ echo "➜ Actualización en lote ... \n";
 // Actualización en lotes
 $result = $woocommerce->post('products/batch', $data);
 
+
+
 if (! $result) {
     echo("❗Error al actualizar productos \n");
 } else {
     print("✔ Productos actualizados correctamente \n");
-}
+} */
+
+
+// ---------Insertando un productos-------------
+$data = [
+    'create' => [
+        [
+            'name' => 'Woo Single #1',
+            'type' => 'simple',
+            'regular_price' => '21.99',
+            'virtual' => true,
+            'downloadable' => true,
+            'downloads' => [
+                [
+                    'name' => 'Woo Single',
+                    'file' => 'http://demo.woothemes.com/woocommerce/wp-content/uploads/sites/56/2013/06/cd_4_angle.jpg'
+                ]
+            ],
+            'categories' => [
+                [
+                    'id' => 11
+                ],
+                [
+                    'id' => 13
+                ]
+            ],
+            'images' => [
+                [
+                    'src' => 'http://demo.woothemes.com/woocommerce/wp-content/uploads/sites/56/2013/06/cd_4_angle.jpg'
+                ]
+            ]
+        ],
+        [
+            'name' => 'New Premium Quality',
+            'type' => 'simple',
+            'regular_price' => '21.99',
+            'description' => 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.',
+            'short_description' => 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
+            'categories' => [
+                [
+                    'id' => 9
+                ],
+                [
+                    'id' => 14
+                ]
+            ],
+            'images' => [
+                [
+                    'src' => 'http://demo.woothemes.com/woocommerce/wp-content/uploads/sites/56/2013/06/T_2_front.jpg'
+                ],
+                [
+                    'src' => 'http://demo.woothemes.com/woocommerce/wp-content/uploads/sites/56/2013/06/T_2_back.jpg'
+                ]
+            ]
+        ]
+    ],
+    'update' => [
+        [
+            'id' => 799,
+            'default_attributes' => [
+                [
+                    'id' => 6,
+                    'name' => 'Color',
+                    'option' => 'Green'
+                ],
+                [
+                    'id' => 0,
+                    'name' => 'Size',
+                    'option' => 'M'
+                ]
+            ]
+        ]
+    ],
+    'delete' => [
+        794
+    ]
+];
+
+print_r($woocommerce->post('products/batch', $data));
+print("✔ Productos actualizados correctamente \n");
+
+?>
