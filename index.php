@@ -5,8 +5,8 @@ use Automattic\WooCommerce\Client;
 // Conexión WooCommerce API destino
 // ================================
 $url_API_woo = 'https://localhost/wordpress/tienda/';
-$ck_API_woo = 'ck_25408338bd88e4d060f34b0cb52b8c30f9225e20';
-$cs_API_woo = 'cs_6fd8d300dd3abc67427f977b53b112c3eeca2b03';
+$ck_API_woo = 'ck_d40f910432b1391d7bde1f0e60c0c95874175886';
+$cs_API_woo = 'cs_8b7d316d8053758c720e4b8849a246390bcef831';
 
 $woocommerce = new Client(
     $url_API_woo,
