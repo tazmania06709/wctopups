@@ -1,6 +1,7 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
 use Automattic\WooCommerce\Client;
+//use GuzzleHttp\Promise\Create;
 
 // Conexión WooCommerce API destino
 // ================================
@@ -95,7 +96,7 @@ if (! $result) {
 
 
 // ---------Insertando un productos-------------
-$data = [
+/* $data = [
     'create' => 
           [       
             //'id' => '794',
@@ -104,8 +105,8 @@ $data = [
            // 'permalink' => '',
             'date_created' => '2021-03-23T14:01:13',
             'date_created_gmt' => '2021-03-23T14:01:13',
-            /* 'date_modified' => '',
-            'date_modified_gmt' => '', */
+             'date_modified' => '',
+            'date_modified_gmt' => '', 
             'type' => 'double',
             'status' => 'publish',
             'featured' => false,
@@ -168,7 +169,7 @@ $data = [
               /* 'upsell_ids' => [],
               'cross_sell_ids' => [],
               'parent_id' => 0,
-              'purchase_note' => '', */
+              'purchase_note' => '', 
               'categories' => [
                 [
                   'id'=> 11,
@@ -181,24 +182,24 @@ $data = [
                   'slug' => 't-shirts'
                 ]
               ],
-              //'tags' => [],
+              'tags' => [],
               'images' => [
                 [
-                  /* 'id' => 792,
+                   'id' => 792,
                   'date_created' => '2017-03-23T14:01:13',
                   'date_created_gmt' => '2017-03-23T20:01:13',
                   'date_modified'=> '2017-03-23T14:01:13',
-                  'date_modified_gmt' => '2017-03-23T20:01:13', */
+                  'date_modified_gmt' => '2017-03-23T20:01:13', 
                   'src' => 'https://prime-telecomservices.com/logo-transparent.png',
-                 /*  'name' => '',
-                  'alt' => '' */
+                   'name' => '',
+                  'alt' => '' 
                 ],
                  [
                   /* 'id' =>  793,
                   'date_created' => '2017-03-23T14:01:13',
                   'date_created_gmt' => '2017-03-23T20:01:13',
                   'date_modified'=> '2017-03-23T14:01:13',
-                  'date_modified_gmt' => '2017-03-23T20:01:13', */
+                  'date_modified_gmt' => '2017-03-23T20:01:13', 
                   'src' => 'https://prime-telecomservices.com/logo-transparent.png',
                    'name' => '',
                   'alt' => '' 
@@ -222,7 +223,7 @@ $data = [
                   ]
                 ]
               ] 
-            ]*/
+            ]
           ],
        /*  [
             'name' => 'New Premium Quality',
@@ -246,8 +247,83 @@ $data = [
                     'src' => 'http://demo.woothemes.com/woocommerce/wp-content/uploads/sites/56/2013/06/T_2_back.jpg'
                 ]
             ]
+        ] 
+    ],
+     'update' => [
+        [
+            'id' => 799,
+            'default_attributes' => [
+                [
+                    'id' => 6,
+                    'name' => 'Color',
+                    'option' => 'Green'
+                ],
+                [
+                    'id' => 0,
+                    'name' => 'Size',
+                    'option' => 'M'
+                ]
+            ]
+        ] 
+    ],
+    'delete' => [
+        794
+    ] 
+];
+ */
+$data = [
+    'create' => [
+        [
+            'name' => 'Recargas Internacionales',
+            'slug' => 'recargas-internacionales',
+            'type' => 'simple',
+            'regular_price' => '19.80',
+            'virtual' => true,
+            'downloadable' => true,
+            'downloads' => [
+                [
+                    'name' => 'RI Single',
+                    'file' => 'https://prime-telecomservices.com/logo-transparent.png'
+                ]
+            ],
+            'categories' => [
+                [
+                    'id' => 11
+                ],
+                [
+                    'id' => 13
+                ]
+            ],
+            'images' => [
+                [
+                    'src' => 'https://prime-telecomservices.com/logo-transparent.png'
+                ]
+            ]
+        ],
+        /* [
+            'name' => 'CUBA',
+            'type' => 'simple',
+            'regular_price' => '21.99',
+            'description' => 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.',
+            'short_description' => 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
+            'categories' => [
+                [
+                    'id' => 9
+                ],
+                [
+                    'id' => 14
+                ]
+            ],
+            'images' => [
+                [
+                    'src' => 'http://demo.woothemes.com/woocommerce/wp-content/uploads/sites/56/2013/06/T_2_front.jpg'
+                ],
+                [
+                    'src' => 'http://demo.woothemes.com/woocommerce/wp-content/uploads/sites/56/2013/06/T_2_back.jpg'
+                ]
+            ]
         ] */
-    //],
+    ],
     /* 'update' => [
         [
             'id' => 799,
@@ -263,8 +339,8 @@ $data = [
                     'option' => 'M'
                 ]
             ]
-        ] */
-   /*  ],
+        ]
+    ],
     'delete' => [
         794
     ] */
@@ -274,29 +350,3 @@ print_r($woocommerce->post('products/batch', $data));
 print("✔ Productos actualizados correctamente \n");
 
 ?>
-/*  [
-            'name' => 'Woo Single #1',
-            'type' => 'simple',
-            'regular_price' => '21.99',
-            'virtual' => true,
-            'downloadable' => true,
-            'downloads' => [
-                [
-                    'name' => 'Woo Single',
-                    'file' => 'http://demo.woothemes.com/woocommerce/wp-content/uploads/sites/56/2013/06/cd_4_angle.jpg'
-                ]
-            ],
-            'categories' => [
-                [
-                    'id' => 11
-                ],
-                [
-                    'id' => 13
-                ]
-            ],
-            'images' => [
-                [
-                    'src' => 'http://demo.woothemes.com/woocommerce/wp-content/uploads/sites/56/2013/06/cd_4_angle.jpg'
-                ]
-            ]
-        ], */
