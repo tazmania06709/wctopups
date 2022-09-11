@@ -97,7 +97,7 @@ if (! $result) {
 // ---------Insertando un productos-------------
 $data = [
     'create' => [
-        [
+       /*  [
             'name' => 'Woo Single #1',
             'type' => 'simple',
             'regular_price' => '21.99',
@@ -122,7 +122,7 @@ $data = [
                     'src' => 'http://demo.woothemes.com/woocommerce/wp-content/uploads/sites/56/2013/06/cd_4_angle.jpg'
                 ]
             ]
-        ],
+        ], */
         [
             'name' => 'Recargas Internacionales',
             'type' => 'DOUBLE',
@@ -151,7 +151,7 @@ $data = [
                 ]
             ]
         ],
-        [
+       /*  [
             'name' => 'New Premium Quality',
             'type' => 'simple',
             'regular_price' => '21.99',
@@ -173,9 +173,9 @@ $data = [
                     'src' => 'http://demo.woothemes.com/woocommerce/wp-content/uploads/sites/56/2013/06/T_2_back.jpg'
                 ]
             ]
-        ]
+        ] */
     ],
-    'update' => [
+    /* 'update' => [
         [
             'id' => 799,
             'default_attributes' => [
@@ -190,11 +190,11 @@ $data = [
                     'option' => 'M'
                 ]
             ]
-        ]
-    ],
+        ] */
+   /*  ],
     'delete' => [
         794
-    ]
+    ] */
 ];
 
 print_r($woocommerce->post('products/batch', $data));
