@@ -96,43 +96,17 @@ if (! $result) {
 
 // ---------Insertando un productos-------------
 $data = [
-    'create' => [
-       /*  [
-            'name' => 'Woo Single #1',
-            'type' => 'simple',
-            'regular_price' => '21.99',
-            'virtual' => true,
-            'downloadable' => true,
-            'downloads' => [
-                [
-                    'name' => 'Woo Single',
-                    'file' => 'http://demo.woothemes.com/woocommerce/wp-content/uploads/sites/56/2013/06/cd_4_angle.jpg'
-                ]
-            ],
-            'categories' => [
-                [
-                    'id' => 11
-                ],
-                [
-                    'id' => 13
-                ]
-            ],
-            'images' => [
-                [
-                    'src' => 'http://demo.woothemes.com/woocommerce/wp-content/uploads/sites/56/2013/06/cd_4_angle.jpg'
-                ]
-            ]
-        ], */
-        [
-            'id' => '794',
+    'create' => 
+          [       
+            //'id' => '794',
             'name' => 'Recargas Internacionales',
             'slug' => 'recargas-internacionales',
-            'permalink' => '',
-            'date_created' => '',
-            'date_created_gmt' => '',
-            'date_modified' => '',
-            'date_modified_gmt' => '',
-            'type' => 'simple',
+           // 'permalink' => '',
+            'date_created' => '2021-03-23T14:01:13',
+            'date_created_gmt' => '2021-03-23T14:01:13',
+            /* 'date_modified' => '',
+            'date_modified_gmt' => '', */
+            'type' => 'double',
             'status' => 'publish',
             'featured' => false,
             'catalog_visibility' => 'visible',
@@ -146,7 +120,7 @@ $data = [
             'date_on_sale_from_gmt' => null,
             'date_on_sale_to' => null,
             'date_on_sale_to_gmt' => null,
-            'price_html' => '<span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#36;</span>21.99</span>',
+           // 'price_html' => '<span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#36;</span>21.99</span>',
             'on_sale' => false,
             'purchasable' => true,
             'total_sales'=> 0,
@@ -158,7 +132,7 @@ $data = [
                     'file' => 'https://prime-telecomservices.com/logo-transparent.png'
                 ]
             ],
-            'download_limit' => -1,
+            /* 'download_limit' => -1,
             'download_expiry' => -1,
             'external_url' => '',
             'button_text' => '',
@@ -170,44 +144,44 @@ $data = [
             'backorders' => 'no',
             'backorders_allowed' => false,
             'backordered' => false,
-            'sold_individually' => false,
-            'weight'=> '',
+            'sold_individually' => false, */
+            /* 'weight'=> '',
             'dimensions' => [
               'length'=> '',
               'width' => '',
               'height' => ''
-            ],
-            'shipping_required' => true,
+            ], */
+            /* 'shipping_required' => true,
             'shipping_taxable' => true,
             'shipping_class'=> '',
             'shipping_class_id' => 0,
             'reviews_allowed' => true,
             'average_rating' => '0.00',
-            'rating_count' => 0,
-            'related_ids' => [
+            'rating_count' => 0, */
+            /* 'related_ids' => [
                 53,
                 40,
                 56,
                 479,
                 99
-              ],
-              'upsell_ids' => [],
+              ], */
+              /* 'upsell_ids' => [],
               'cross_sell_ids' => [],
               'parent_id' => 0,
-              'purchase_note' => '',
+              'purchase_note' => '', */
               'categories' => [
                 [
-                  'id'=> 9,
-                  /* 'name' => 'Clothing',
-                  'slug'=> 'clothing' */
+                  'id'=> 11,
+                  'name' => 'Clothing',
+                  'slug'=> 'clothing'
                 ],
                 [
-                  'id' => 14,
-                  /* 'name' => 'T-shirts',
-                  'slug' => 't-shirts' */
+                  'id' => 13,
+                  'name' => 'T-shirts',
+                  'slug' => 't-shirts'
                 ]
               ],
-              'tags' => [],
+              //'tags' => [],
               'images' => [
                 [
                   /* 'id' => 792,
@@ -219,18 +193,18 @@ $data = [
                  /*  'name' => '',
                   'alt' => '' */
                 ],
-                [
+                 [
                   /* 'id' =>  793,
                   'date_created' => '2017-03-23T14:01:13',
                   'date_created_gmt' => '2017-03-23T20:01:13',
                   'date_modified'=> '2017-03-23T14:01:13',
                   'date_modified_gmt' => '2017-03-23T20:01:13', */
                   'src' => 'https://prime-telecomservices.com/logo-transparent.png',
-                  /* 'name' => '',
-                  'alt' => '' */
+                   'name' => '',
+                  'alt' => '' 
                 ]
               ],
-              'attributes' => [],
+              /* 'attributes' => [],
               'default_attributes' => [],
               'variations' => [],
               'grouped_products' => [],
@@ -247,8 +221,8 @@ $data = [
                     'href' => 'https://example.com/wp-json/wc/v3/products'
                   ]
                 ]
-              ]
-            ]
+              ] 
+            ]*/
           ],
        /*  [
             'name' => 'New Premium Quality',
@@ -300,3 +274,29 @@ print_r($woocommerce->post('products/batch', $data));
 print("✔ Productos actualizados correctamente \n");
 
 ?>
+/*  [
+            'name' => 'Woo Single #1',
+            'type' => 'simple',
+            'regular_price' => '21.99',
+            'virtual' => true,
+            'downloadable' => true,
+            'downloads' => [
+                [
+                    'name' => 'Woo Single',
+                    'file' => 'http://demo.woothemes.com/woocommerce/wp-content/uploads/sites/56/2013/06/cd_4_angle.jpg'
+                ]
+            ],
+            'categories' => [
+                [
+                    'id' => 11
+                ],
+                [
+                    'id' => 13
+                ]
+            ],
+            'images' => [
+                [
+                    'src' => 'http://demo.woothemes.com/woocommerce/wp-content/uploads/sites/56/2013/06/cd_4_angle.jpg'
+                ]
+            ]
+        ], */
