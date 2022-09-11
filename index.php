@@ -4,17 +4,22 @@ use Automattic\WooCommerce\Client;
 
 // Conexión WooCommerce API destino
 // ================================
-$url_API_woo = 'https://localhost/wordpress/tienda/';
+/* $url_API_woo = 'https://localhost/wordpress/';
 $ck_API_woo = 'ck_d40f910432b1391d7bde1f0e60c0c95874175886';
-$cs_API_woo = 'cs_8b7d316d8053758c720e4b8849a246390bcef831';
+$cs_API_woo = 'cs_8b7d316d8053758c720e4b8849a246390bcef831'; */
 
 $woocommerce = new Client(
-    $url_API_woo,
+     /* $url_API_woo,
     $ck_API_woo,
-    $cs_API_woo,
+    $cs_API_woo, */
+    'https://localhost/wordpress/', 
+    'ck_d40f910432b1391d7bde1f0e60c0c95874175886',
+    'cs_8b7d316d8053758c720e4b8849a246390bcef831',
     [
-        'wp_api' => true,
-        'version' => 'wc/v3'
+        // 'wp_api' => true,
+        'version' => 'wc/v3',
+        'timeout'=> 30,
+        'verify_ssl'=> false
     ]
 );
 // ================================
