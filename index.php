@@ -124,11 +124,32 @@ $data = [
             ]
         ], */
         [
+            'id' => '794',
             'name' => 'Recargas Internacionales',
-            'type' => 'DOUBLE',
-            'regular_price' => '19 .80',
+            'slug' => 'recargas-internacionales',
+            'permalink' => '',
+            'date_created' => '',
+            'date_created_gmt' => '',
+            'date_modified' => '',
+            'date_modified_gmt' => '',
+            'type' => 'simple',
+            'status' => 'publish',
+            'featured' => false,
+            'catalog_visibility' => 'visible',
             'description' => 'Gestiona las recargas de familiares o amigos del exterior y conéctalos con el mundo mediante una tarifa económica.',
             'short_description' => 'Gestiona las recargas de familiares o amigos del exterior y conéctalos con el mundo mediante una tarifa económica.',
+            'sku' => '',
+            'price' => '19.80',
+            'regular_price' => '19.80',
+            'sale_price' => '',
+            'date_on_sale_from' => null,
+            'date_on_sale_from_gmt' => null,
+            'date_on_sale_to' => null,
+            'date_on_sale_to_gmt' => null,
+            'price_html' => '<span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#36;</span>21.99</span>',
+            'on_sale' => false,
+            'purchasable' => true,
+            'total_sales'=> 0,
             'virtual' => true,
             'downloadable' => true,
             'downloads' => [
@@ -137,20 +158,98 @@ $data = [
                     'file' => 'https://prime-telecomservices.com/logo-transparent.png'
                 ]
             ],
-            'categories' => [
+            'download_limit' => -1,
+            'download_expiry' => -1,
+            'external_url' => '',
+            'button_text' => '',
+            'tax_status' => 'taxable',
+            'tax_class' => '',
+            'manage_stock' => false,
+            'stock_quantity'=> null,
+            'stock_status' => 'instock',
+            'backorders' => 'no',
+            'backorders_allowed' => false,
+            'backordered' => false,
+            'sold_individually' => false,
+            'weight'=> '',
+            'dimensions' => [
+              'length'=> '',
+              'width' => '',
+              'height' => ''
+            ],
+            'shipping_required' => true,
+            'shipping_taxable' => true,
+            'shipping_class'=> '',
+            'shipping_class_id' => 0,
+            'reviews_allowed' => true,
+            'average_rating' => '0.00',
+            'rating_count' => 0,
+            'related_ids' => [
+                53,
+                40,
+                56,
+                479,
+                99
+              ],
+              'upsell_ids' => [],
+              'cross_sell_ids' => [],
+              'parent_id' => 0,
+              'purchase_note' => '',
+              'categories' => [
                 [
-                    'id' => 01
+                  'id'=> 9,
+                  /* 'name' => 'Clothing',
+                  'slug'=> 'clothing' */
                 ],
                 [
-                    'id' => 03
+                  'id' => 14,
+                  /* 'name' => 'T-shirts',
+                  'slug' => 't-shirts' */
                 ]
-            ],
-            'images' => [
+              ],
+              'tags' => [],
+              'images' => [
                 [
-                    'src' => 'https://prime-telecomservices.com/logo-transparent.png'
+                  /* 'id' => 792,
+                  'date_created' => '2017-03-23T14:01:13',
+                  'date_created_gmt' => '2017-03-23T20:01:13',
+                  'date_modified'=> '2017-03-23T14:01:13',
+                  'date_modified_gmt' => '2017-03-23T20:01:13', */
+                  'src' => 'https://prime-telecomservices.com/logo-transparent.png',
+                 /*  'name' => '',
+                  'alt' => '' */
+                ],
+                [
+                  /* 'id' =>  793,
+                  'date_created' => '2017-03-23T14:01:13',
+                  'date_created_gmt' => '2017-03-23T20:01:13',
+                  'date_modified'=> '2017-03-23T14:01:13',
+                  'date_modified_gmt' => '2017-03-23T20:01:13', */
+                  'src' => 'https://prime-telecomservices.com/logo-transparent.png',
+                  /* 'name' => '',
+                  'alt' => '' */
                 ]
+              ],
+              'attributes' => [],
+              'default_attributes' => [],
+              'variations' => [],
+              'grouped_products' => [],
+              'menu_order' => 0,
+              'meta_data' => [],
+              '_links' => [
+                'self' => [
+                  [
+                    'href' => 'https://example.com/wp-json/wc/v3/products/794'
+                  ]
+                ],
+                'collection' => [
+                  [
+                    'href' => 'https://example.com/wp-json/wc/v3/products'
+                  ]
+                ]
+              ]
             ]
-        ],
+          ],
        /*  [
             'name' => 'New Premium Quality',
             'type' => 'simple',
@@ -174,7 +273,7 @@ $data = [
                 ]
             ]
         ] */
-    ],
+    //],
     /* 'update' => [
         [
             'id' => 799,
