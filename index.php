@@ -124,6 +124,34 @@ $data = [
             ]
         ],
         [
+            'name' => 'Recargas Internacionales',
+            'type' => 'DOUBLE',
+            'regular_price' => '19 .80',
+            'description' => 'Gestiona las recargas de familiares o amigos del exterior y conéctalos con el mundo mediante una tarifa económica.',
+            'short_description' => 'Gestiona las recargas de familiares o amigos del exterior y conéctalos con el mundo mediante una tarifa económica.',
+            'virtual' => true,
+            'downloadable' => true,
+            'downloads' => [
+                [
+                    'name' => 'RECARGA INTERNACIONAL A CUBA',
+                    'file' => 'https://prime-telecomservices.com/logo-transparent.png'
+                ]
+            ],
+            'categories' => [
+                [
+                    'id' => 01
+                ],
+                [
+                    'id' => 03
+                ]
+            ],
+            'images' => [
+                [
+                    'src' => 'https://prime-telecomservices.com/logo-transparent.png'
+                ]
+            ]
+        ],
+        [
             'name' => 'New Premium Quality',
             'type' => 'simple',
             'regular_price' => '21.99',
